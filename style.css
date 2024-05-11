@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+@font-face {
+    font-family:'mario' ;
+    src: url(super_mario_256/SuperMario256.ttf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo-mario{
+    height: 200px;
+}
+
+.botao-contato{
+    color: white;
+    background-color: #c51111;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.botao-contato:hover{
+    background-color: #019a23;
+    font-size: 14px;
+    transition: 0.4s ease-in-out ;
+}
+
+.imagem-mario-luigi{
+    height: 500px;
+}
+
+body{
+    height: 100vh;
+}
+.caixa-mae{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    height: 100vh;
+}
+.caixa-principal{
+    width: 40%;
+}
+.caixa-video{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    
+}
+video{
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+.mascara{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+.link-whats img {
+    height: 70px;
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    z-index: 8;
+}
+.insta{
+    padding-left: 50%;
+    height: 50px;
+    text-align: left;
+    align-items: left;
+}
+.relogio{
+    line-height: 0.95; 
+    margin-top: 10px;
+    padding-right: -10%;
+    width: 30%;
+    right: 30px;
+}
+img.horario{
+   display: flex;
+   margin:-100px -80px 0px 0px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    gap:30px ;
+    margin: 30px;
+}
+.header img{
+        height: 60px;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: mario,sans-serif; 
+   
+}
+.header a:hover{
+    color: #c51111;
+    font-size: 22px;
+    transition: 0.4s  ease-in-out;
+    
+
+}
+.formulario-fale-conosco{
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: left 1s ease-in-out;
+}
+input{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #019a23;
+}
+textarea{
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #019a23;
+}
+.mascara-formulario{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+/*
+top: 30%;
+    left: -300px;
+
+    valor final 
+    top 30%
+    left : 50%
+    transform: translatex(-50);
+    */
+    .header2{
+        display: flex;
+        align-items: center;
+        gap:30px ;
+        margin: 0px;
+        background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+        padding: 20px;
+    }
+    .header2 img{
+            height: 60px;
+    }
+    .header2 a{
+        
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        font-family:mario,sans-serif;
+        
+    }
+    .header2 a:hover{
+        color: #c51111;
+        font-size: 22px;
+        transition: 0.4s  ease-in-out;
+       
+    }
+ h1,h2,h3,h4 {
+    font-weight: 900;
+    color: white
+ }
+.sobrenos{
+    width: 100%;
+    margin: 0 auto;
+}
+main{
+    display: block;
+    background-color: white;
+}
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+section.model p {
+    margin-bottom: 40px;
+}
+section.model:last-child{
+    margin-bottom: 0;
+}
+section.model h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family:mario,sans-serif;
+}
+section.model.conteudo{
+    padding: 40px 0;
+    color: white;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+section.model.model.parallax-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat:no-repeat ;
+    background-attachment: fixed;
+    background-size: cover ;
+    -webkit-background-size:cover;
+    -moz-background-size:cover ;
+    -moz-background-size:cover ;
+}
+section.model.model.parallax-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat:no-repeat ;
+    background-attachment: fixed;
+    background-size: cover ;
+    -webkit-background-size:cover;
+    -moz-background-size:cover ;
+    -moz-background-size:cover ;
+}
+section.model.parallax-1:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(3deg, rgba(0,0,0,0.865983893557423) 0%, rgba(0,0,0,0.6587009803921569) 25%, rgba(0,212,255,0) 100%);
+}
+section.model.parallax-2:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(3deg, rgba(0,0,0,0.865983893557423) 0%, rgba(0,0,0,0.6587009803921569) 25%, rgba(0,212,255,0) 100%);
+}
+section.model.model.parallax-1{
+    @media (max-width: 1100px){
+    background-image: url(img/filme_do_mario_poster_vazado_new_donk_city_recorte.png);
+    }
+   background-image: url(https://pop.proddigital.com.br/wp-content/uploads/sites/8/2023/04/super-mario-bros-scene-2.png);
+}
+section.model.model.parallax-2{
+    @media (max-width:1100px){
+        background-image: url(https://cdn.awsli.com.br/800x800/1610/1610163/produto/195554052/poster-super-mario-bros-o-filme-a-30f921f3.jpg);
+    }
+    background-image: url(img/backgroud.jpeg);
+}
+
+
+section.model.parallax-1 h1{
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    z-index: 50;
+    text-transform: uppercase;
+    font-family:mario,sans-serif;
+
+}
+ section.model.parallax-2 h1{
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    z-index: 50;
+    text-transform: uppercase;
+    font-family:mario,sans-serif;
+
+}
+.sociais{
+    
+}
+.relogio{
+   display: flex;
+  text-align: right;
+    flex-direction: column;
+   margin: 0;
+}
+
+
+
+
+
+
+    @media (max-width: 1100px){
+        p{
+            text-indent: 20px;
+            font-size: 11px;
+            text-align: center;
+        }
+        section.model p {
+            font-size:17px;
+        }
+        .caixa-mae{
+            flex-direction: column;
+            justify-content:flex-start;
+            padding: 10px;
+        }
+        .caixa-principal{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .imagem-mario-luigi{
+            width: 80vw;
+            height: auto;
+        }
+        .header{
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header img{
+           
+
+        }
+        .header a {
+            font-size: 20px;
+        }
+        .header2{
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .header2 a {
+            font-size: 15px;
+        }
+        
+        section.model.parallax-1 h1{
+            
+            font-size: 40px;
+        }
+        section.model.parallax-2 h1{
+            font-size: 40px;
+        }
+        section.model.model.parallax-1{
+            background-position: 55% 50%;
+            height: 70vh !important;
+            background-size:cover ;
+        }
+        section.model.model.parallax-2{
+            background-position: 55% 50%;
+            height: 70vh !important;
+            background-size:cover
+        } 
+        .header a {
+            font-size: 15px;
+        }
+        .insta{
+            display: flex;
+            
+            padding-left: 10%;
+            height: 80px;
+            margin-top: -10px;
+            width: 60%;
+        }
+        .relogio{
+            display: flex;
+            align-items: center;
+            line-height: 0.95; 
+            margin-top: -10px;
+            padding-right: -50%;
+            width: 80% ;
+            right: 0px;
+        }
+        img.horario{
+            width: 27%;
+           display: flex;
+           align-items: center;
+           margin:5px -80px 0px 20px;
+        }
+        section.model h2{
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+    } 
